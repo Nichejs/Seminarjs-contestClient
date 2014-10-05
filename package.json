@@ -1,0 +1,33 @@
+{
+	"name": "seminarjs-contestclient",
+	"version": "0.0.1",
+	"description": "Client for the Seminarjs live Contest plugin",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm test"
+	},
+	"bin": {
+		"seminarjsContest": "./bin/validate.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Nichejs/Seminarjs-contestClient.git"
+	},
+	"keywords": [
+    "seminarjs",
+    "contest",
+    "client",
+    "live",
+    "challenge",
+    "user"
+  ],
+	"author": "Nichejs",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Nichejs/Seminarjs-contestClient/issues"
+	},
+	"homepage": "https://github.com/Nichejs/Seminarjs-contestClient",
+	"dependencies": {
+		"request": "^2.44.0"
+	}
+}
