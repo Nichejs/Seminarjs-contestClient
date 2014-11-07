@@ -9,6 +9,7 @@ var package = require('../package.json'),
 console.log(dashes);
 console.log("Seminarjs Contest Client");
 console.log("Version " + package.version);
+console.log("Usage: seminarjsContest [host] [token] [filename]");
 console.log(dashes);
 
 var arguments = process.argv.slice(2),
@@ -45,6 +46,10 @@ request({
 		'token': token
 	}
 }, function (error, response, body) {
+	if (typeof (response) === 'undefined') {
+		console.log("Error: Invalid host");
+		return;
+	}
 	if (response.statusCode !== 200) {
 		console.log(body);
 	} else {
